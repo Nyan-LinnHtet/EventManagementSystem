@@ -1,0 +1,141 @@
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+#container {
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #eee;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.main-events {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.main-events h2 {
+  text-align: center;
+  color: #333;
+}
+
+.main-events h3 {
+  margin-top: 20px;
+  color: #007bff;
+}
+
+.main-events ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-events ul li {
+  background: #eee;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#add-event-form {
+  margin-bottom: 20px;
+}
+
+#add-event-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+#add-event-form input,
+#add-event-form select {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.main-events {
+  margin-top: 20px;
+}
+
+#deleteAllButton {
+  margin-top: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

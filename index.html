@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav a {
+            color: #333;
+            margin-left: 20px;
+            text-transform: uppercase;
+        }
+
+        .header-section {
+            padding: 60px 20px;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-section h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .header-section p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card i {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .card h4 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">CherryLwin</a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Case Studies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Plans</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            <li class="nav-item">
+                <button class="btn btn-primary" id="registerBtn">Register</button>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <section class="header-section">
+        <h1>Event Management App</h1>
+        <p>Manage events, theater, cinema, and much more with ease.</p>
+    </section>
+    
+    <div class="card-container">
+        <div class="card">
+            <i class="bi bi-person-fill"></i>
+            <h4>Theater</h4>
+            <p>Manage theater events.</p>
+        </div>
+        <div class="card">
+            <i class="bi bi-film"></i>
+            <h4>Cinema</h4>
+            <p>Manage cinema events.</p>
+        </div>
+        <div class="card">
+            <i class="bi bi-calendar-event"></i>
+            <h4>Exhibition</h4>
+            <p>Manage exhibition events.</p>
+        </div>
+    </div>
+    <div id="container" style="display: none;">
+        
+        <div id="loginSection" style="display: none;">
+          <h2>Login</h2>
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email">
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter your password">
+          <br>
+          <button id="loginButton" onclick="login()">Login</button>
+        </div>
+    
+        
+        <div id="add-event-form" style="display: none;">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" placeholder="Enter event name">
+            <label for="availableSeats">Available Seats:</label>
+            <input type="number" id="availableSeats" placeholder="Enter available seats">
+            <label for="category">Category:</label>
+            <select id="category">
+            <option value="Theater">Theater</option>
+            <option value="Cinema">Cinema</option>
+            <option value="Exhibition">Exhibition</option>
+            </select>
+            <button onclick="addNewEvent()">Add Event</button>
+        </div>
+
+        
+        <button id="confirm-events-btn" style="display: none;" onclick="confirmEvents()">Confirm Events</button>
+        <button id="deleteAllButton" style="display: none;" onclick="deleteAllEvents()">Delete All Events</button>
+        </div>
+    <footer>
+        <p id="footer">&copy; 2025 Event Management System</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
